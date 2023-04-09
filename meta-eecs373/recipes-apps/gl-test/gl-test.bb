@@ -33,5 +33,5 @@ do_install() {
 FILES:${PN} = "${bindir}"
 
 do_clean() {
-    rm -f ${EXE}
+    oe_runmake clean-${EXE}
 }
